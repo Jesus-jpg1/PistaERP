@@ -7,5 +7,5 @@ class Fornecedor(models.Model):
     email = models.EmailField(max_length=100)
     endereco = models.TextField()
 
-def __str__(self):
-    return f'{self.nome} - CNPJ: {self.cnpj}'
+    def __str__(self):
+        return f'{self.nome} - CNPJ: {self.cnpj}'

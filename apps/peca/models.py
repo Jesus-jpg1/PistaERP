@@ -7,5 +7,5 @@ class Peca(models.Model):
     quantidade_estoque = models.IntegerField()
     fornecedor_id = models.ForeignKey('fornecedor.Fornecedor', on_delete=models.CASCADE)
 
-def __str__(self):
-    return f'{self.nome} - {self.descricao[:30]}'
+    def __str__(self):
+        return f'{self.nome} - {self.descricao[:30]}'

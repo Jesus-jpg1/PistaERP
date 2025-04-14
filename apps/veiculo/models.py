@@ -8,8 +8,8 @@ class Veiculo(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, related_name='veiculos')
     marca = models.CharField(max_length=50)
     modelo = models.CharField(max_length=50)
-    placa = models.CharField(max_length=8, validators=[validar_placa], default=lambda: gerar_placa('mercosul'))
+    placa = models.CharField(max_length=8, validators=[validar_placa], default=gerar_placa)
     ano = models.IntegerField()
 
-def __str__(self):
-    return f'{self.marca} {self.modelo} ({self.placa})'
+    def __str__(self):
+        return f'{self.marca} {self.modelo} ({self.placa})'

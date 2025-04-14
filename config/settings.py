@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'apps.cliente',
     'apps.core',
     'apps.veiculo',
+    'apps.peca',
+    'apps.fornecedor',
 ]
 
 MIDDLEWARE = [

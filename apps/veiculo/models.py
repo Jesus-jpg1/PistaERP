@@ -10,3 +10,6 @@ class Veiculo(models.Model):
     modelo = models.CharField(max_length=50)
     placa = models.CharField(max_length=8, validators=[validar_placa], default=lambda: gerar_placa('mercosul'))
     ano = models.IntegerField()
+
+def __str__(self):
+    return f'{self.marca} {self.modelo} ({self.placa})'

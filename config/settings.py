@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'apps.peca',
     'apps.fornecedor',
     'apps.ordem_servico',
+    'apps.os_peca',
 ]
 
 MIDDLEWARE = [

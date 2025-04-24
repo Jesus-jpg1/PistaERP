@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/cliente/', include('apps.cliente.urls')),
+    path('api/veiculo/', include('apps.veiculo.urls')),
 ]
 
 if settings.DEBUG:

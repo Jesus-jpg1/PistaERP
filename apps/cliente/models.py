@@ -8,4 +8,4 @@ class Cliente(models.Model):
     endereco = models.TextField()
 
     def __str__(self):
-        return f"{self.nome} ({self.cpf})"
+        return f"{self.nome} ({self.telefone})"

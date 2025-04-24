@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/cliente/', include('apps.cliente.urls')),
     path('api/veiculo/', include('apps.veiculo.urls')),
+    path('api/peca/', include('apps.peca.urls')),
 ]
 
 if settings.DEBUG:

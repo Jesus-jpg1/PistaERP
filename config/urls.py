@@ -24,6 +24,7 @@ urlpatterns = [
     path('api/cliente/', include('apps.cliente.urls')),
     path('api/veiculo/', include('apps.veiculo.urls')),
     path('api/peca/', include('apps.peca.urls')),
+    path('api/fornecedor/', include('apps.fornecedor.urls')),
 ]
 
 if settings.DEBUG:

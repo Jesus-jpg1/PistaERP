@@ -14,3 +14,11 @@ def validar_placa(value):
             'Placa inválida. Use o formato ABC-1234 ou ABC1D23.',
             code='invalid_plate'
         )
+
+def validar_cnpj(value):
+    """
+    Valida se o CNPJ informado possui 14 dígitos numéricos.
+    """
+    cnpj = re.sub(r'\D','', value) # Remove tudo que não for número
+    if len(cnpj) != 14:
+        raise ValidationError('CNPJ deve conter 14 dígitos númericos.')

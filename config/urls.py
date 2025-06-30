@@ -25,7 +25,8 @@ urlpatterns = [
     path('api/veiculo/', include('apps.veiculo.urls')),
     path('api/peca/', include('apps.peca.urls')),
     path('api/fornecedor/', include('apps.fornecedor.urls')),
-    path('api/ordem_servico/', include('apps.ordem_servico.urls'))
+    path('api/ordem_servico/', include('apps.ordem_servico.urls')),
+    path('api/os_peca/', include('apps.os_peca.urls')),
 ]
 
 if settings.DEBUG:
